@@ -1,135 +1,89 @@
-
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Monitor del Sistema - Grupo 9</title>
-
     <style>
-
         body {
-
-            font-family: Arial, sans-serif;
-
+            font-family: 'Arial', sans-serif;
             margin: 0;
-
             padding: 20px;
-
-            background-color: #f4f4f4;
-
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
-
         .container {
-
             max-width: 800px;
-
             margin: 0 auto;
-
             background: white;
-
-            padding: 20px;
-
-            border-radius: 8px;
-
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-        }
-
-        h1 {
-
-            color: #333;
-
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             text-align: center;
-
         }
-
-        .reporte {
-
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .card {
             background: #f8f9fa;
-
-            padding: 15px;
-
-            margin: 10px 0;
-
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            text-align: left;
+        }
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
             border-radius: 5px;
-
-            border-left: 4px solid #007bff;
-
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            transition: background 0.3s;
         }
-
-        .comando {
-
-            background: #e9ecef;
-
+        .btn:hover {
+            background: #5a6fd8;
+        }
+        .feature {
+            margin: 15px 0;
             padding: 10px;
-
-            border-radius: 3px;
-
-            font-family: monospace;
-
+            background: #e9ecef;
+            border-radius: 5px;
         }
-
     </style>
-
 </head>
-
 <body>
-
     <div class="container">
-
         <h1>🚀 Monitor del Sistema - Grupo 9</h1>
-
         
-
-        <div class="reporte">
-
-            <h2>📊 Reportes del Sistema</h2>
-
-            <p>Ejecuta los scripts de monitoreo para generar reportes:</p>
-
-            <div class="comando">./scripts/reporte_sistema.sh</div>
-
-            <div class="comando">./scripts/reporte_sys.sh</div>
-
+        <div class="card">
+            <h2>📊 Sistema de Monitoreo en Tiempo Real</h2>
+            <p>Monitorea el estado de tu servidor con información actualizada del sistema.</p>
+            
+            <a href="monitor.php" class="btn">🔍 Ver Reporte del Sistema</a>
         </div>
 
-
-        <div class="reporte">
-
-            <h2>🔧 Contenedor Docker</h2>
-
-            <p>El contenedor está ejecutándose correctamente en el puerto 8080</p>
-
+        <div class="card">
+            <h2>🔧 Características del Proyecto</h2>
+            <div class="feature">✅ Monitoreo automático cada 30 minutos</div>
+            <div class="feature">✅ Scripts de reporte del sistema</div>
+            <div class="feature">✅ Contenedor Docker con Nginx/Apache</div>
+            <div class="feature">✅ Interface web responsive</div>
+            <div class="feature">✅ Control de versiones con Git</div>
         </div>
 
-
-        <div class="reporte">
-
-            <h2>📁 Estructura del Proyecto</h2>
-
-            <ul>
-
-                <li><strong>scripts/</strong> - Scripts de monitoreo del sistema</li>
-
-                <li><strong>web/</strong> - Interfaz web (este archivo)</li>
-
-                <li><strong>datos/</strong> - Almacenamiento de reportes generados</li>
-
-                <li><strong>capturas/</strong> - Capturas del sistema</li>
-
-            </ul>
-
+        <div class="card">
+            <h2>📈 Métricas Monitoreadas</h2>
+            <div class="feature">• Fecha y hora del sistema</div>
+            <div class="feature">• Nombre del host</div>
+            <div class="feature">• Usuarios conectados</div>
+            <div class="feature">• Espacio en disco</div>
+            <div class="feature">• Memoria RAM disponible</div>
+            <div class="feature">• Contenedores Docker activos</div>
         </div>
-
     </div>
-
 </body>
-
 </html>
-

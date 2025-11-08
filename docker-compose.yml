@@ -1,13 +1,24 @@
-cat > docker-compose.yml << 'EOF'
 services:
+
   web-monitor:
+
     build: .
+
     container_name: proyecto-linux-grupo9
+
     ports:
+
       - "8080:80"
+
     volumes:
+
       - ./scripts:/var/www/scripts
+
       - ./web:/var/www/html
+
       - ./datos:/var/www/datos
+
       - ./capturas:/var/www/capturas
+
     restart: unless-stopped
+
