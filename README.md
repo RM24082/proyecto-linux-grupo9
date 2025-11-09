@@ -388,8 +388,11 @@ docker ps
 
 
 Josue Alexander Najarro Cardoza ------------------- nc23009
-Daniel Alexis Ramirez Martinez  ------------------- rm24082   
+
+Daniel Alexis Ramirez Martinez  ------------------- rm24082 
+
 Carlos Sanchez Villalobos       ------------------- SV24006
+
 Alexander Alonso Zeceña Martinez ------------------ zm24004
 
 
