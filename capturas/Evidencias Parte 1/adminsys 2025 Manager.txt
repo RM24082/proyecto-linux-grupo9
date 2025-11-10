@@ -1,0 +1,3 @@
+adminsys=2025.Manager
+tecnico=2025.Tec
+visitante=2025.User
