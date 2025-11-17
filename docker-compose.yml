@@ -2,7 +2,9 @@ services:
 
   web-monitor:
 
-    build: .
+    build: 
+      context: .
+      network: host
 
     container_name: proyecto-linux-grupo9
 
